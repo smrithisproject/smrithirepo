@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+{% extends 'adminindex.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="/updatedstud">
+  <table width="281" border="1" align="center">
+    <tr>
+      <th scope="row">Name</th>
+      <td><label for="textfield"></label>
+      <input type="text" name="textfield" id="textfield" value="{{val[1]}}" required pattern="[A-Z a-z0-9]{3,25}" /></td>
+    </tr>
+     <tr>
+      <th scope="row">Gender</th>
+      <td><input type="radio" name="radio" id="radio" value="male" {% if val[2]=='male' %}checked {% endif %} />
+      <label for="radio">Male
+        <input type="radio" name="radio" id="radio2" value="female" {% if val[2]=='female' %}checked {% endif %}/>
+      Female</label></td>
+    </tr>
+    <tr>
+      <th scope="row">Place</th>
+      <td><label for="textfield2"></label>
+      <input type="text" name="textfield2" id="textfield2" value="{{val[3]}}" required pattern="[A-Z a-z0-9]{3,25}"/></td>
+    </tr>
+    <tr>
+      <th scope="row">Post</th>
+      <td><label for="textfield3"></label>
+      <input type="text" name="textfield3" id="textfield3" value="{{val[4]}}" required pattern="[A-Z a-z0-9]{3,25}"/></td>
+    </tr>
+    <tr>
+      <th scope="row">Pin</th>
+      <td><label for="textfield4"></label>
+      <input type="text" name="textfield4" id="textfield4" value="{{val[5]}}" title="Minimum 6 Numbers needed" required pattern="[0-9]{6}"/></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="UPDATE" /></th>
+    </tr>
+  </table>
+</form>
+{% endblock %}
+</body>
+</html>

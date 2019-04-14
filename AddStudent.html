@@ -4,16 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 </head>
-
-<body>
 {% extends 'adminindex.html' %}
 {% block body %}
-<form id="form1" name="form1" method="post" action="/teacherreg">
+<body>
+<form id="form1" name="form1" method="post" action="/studreg">
   <table width="281" border="1" align="center">
     <tr>
       <th scope="row">Name</th>
       <td><label for="textfield"></label>
-      <input type="text" name="textfield" id="textfield" required pattern="[A-Z a-z0-9]{3,25}"/></td>
+      <input type="text" name="textfield" id="textfield"  required pattern="[A-Z a-z0-9]{3,25}"/></td>
     </tr>
      <tr>
       <th scope="row">Gender</th>
@@ -25,22 +24,22 @@
     <tr>
       <th scope="row">Place</th>
       <td><label for="textfield2"></label>
-      <input type="text" name="textfield2" id="textfield2" required pattern="[A-Z a-z0-9]{3,25}"/></td>
+      <input type="text" name="textfield2" id="textfield2"  required pattern="[A-Z a-z0-9]{3,25}"/></td>
     </tr>
     <tr>
       <th scope="row">Post</th>
       <td><label for="textfield3"></label>
-      <input type="text" name="textfield3" id="textfield3" required pattern="[A-Z a-z0-9]{3,25}"/></td>
+      <input type="text" name="textfield3" id="textfield3"  required pattern="[A-Z a-z0-9]{3,25}"/></td>
     </tr>
     <tr>
       <th scope="row">Pin</th>
       <td><label for="textfield4"></label>
-      <input type="text" name="textfield4" id="textfield4" title="Minimum 6 Numbers needed" required pattern="[0-9]{6}"/></td>
+      <input type="text" name="textfield4" id="textfield4" title="Minimum 6 Numbers needed" required pattern="[0-9]{6}" /></td>
     </tr>
     <tr>
       <th scope="row">Username</th>
       <td><label for="textfield5"></label>
-      <input type="text" name="textfield5" id="textfield5" required pattern="[A-Z a-z0-9]{3,25}"/></td>
+      <input type="text" name="textfield5" id="textfield5"  required pattern="[A-Z a-z0-9]{3,25}"/></td>
     </tr>
    
     <tr>

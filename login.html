@@ -1,0 +1,35 @@
+{% extends 'INDEX.HTML' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="/login">
+  <table width="231" border="0" align="center">
+    <tr><em></em>
+      <th width="80" scope="row"><strong><em>Username</em></strong>..</th>
+      <td width="144"><label for="textfield"></label>
+      <input type="text" name="textfield" id="textfield"  required pattern="[A-Z a-z0-9]{3,25}" /></td>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;</th>
+      <td>&nbsp;</td>
+    </tr>
+
+ <tr>
+      <th scope="row">&nbsp;</th>
+      <td>&nbsp;</td>
+    </tr>
+
+
+
+
+    <tr>
+      <th scope="row"><em>Password</em></th>
+      <td><label for="textfield2"></label>
+        <div align="center">
+          <input type="password" name="textfield2" id="textfield2"  required/>
+      </div></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="LOGIN" align="center" /></th>
+    </tr>
+  </table>
+</form>
+{% endblock %}
